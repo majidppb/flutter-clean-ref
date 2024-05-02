@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-abstract class AppStyles {
+sealed class AppStyles {
   static const nullWidget = SizedBox.shrink();
 
 // ===== Padding

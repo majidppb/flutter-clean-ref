@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'app_colors.dart';
 
-abstract class AppTheme {
+sealed class AppTheme {
   static final light = ThemeData(
     brightness: Brightness.light,
     colorSchemeSeed: AppColors.primary,
