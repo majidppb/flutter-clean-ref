@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'application/app/main_app.dart';
+import 'common/utils/app_theme.dart';
+import 'core/router/router.dart';
 import 'core/di/injectable.dart';
 
 void main() {
@@ -9,4 +10,21 @@ void main() {
   configureDependencies();
 
   runApp(const MainApp());
+}
+
+class MainApp extends StatelessWidget {
+  const MainApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp.router(
+      title: '', // TODO: add title
+      themeMode: ThemeMode.system,
+      theme: AppTheme.light,
+      darkTheme: AppTheme.dark,
+      debugShowCheckedModeBanner: false,
+      restorationScopeId: 'root',
+      routerConfig: router,
+    );
+  }
 }

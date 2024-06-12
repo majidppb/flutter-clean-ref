@@ -44,4 +44,3 @@ app.*.map.json
 
 # Generated Files
 lib/core/di/injectable.config.dart
-lib/**/*.freezed.dart

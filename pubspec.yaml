@@ -6,11 +6,11 @@ environment:
   sdk: '>=3.3.4 <4.0.0'
 
 dependencies:
-  dart_either: ^1.0.0
+  dartz: ^0.10.1
+  equatable: ^2.0.5
   flutter:
     sdk: flutter
   flutter_bloc: ^8.1.5
-  freezed_annotation: ^2.4.1
   get_it: ^7.7.0
   go_router: ^14.0.2
   injectable: ^2.4.1
@@ -20,7 +20,6 @@ dev_dependencies:
   flutter_lints: ^3.0.2
   flutter_test:
     sdk: flutter
-  freezed: ^2.5.2
   injectable_generator: ^2.6.1
 
 flutter:
